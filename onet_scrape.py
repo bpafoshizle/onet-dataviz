@@ -44,7 +44,7 @@ except:
 print("Response OK")
 print("Tabulating Jobs...")
 soup = BeautifulSoup(response.text, "html.parser")
-table = soup.find("table", border="0")
+table = soup.find("table")
 table2 = table.find_all("tr")
 
 columnNames = ["SOCcode", "JobName", "JobFamily", "isBright", "isGreen"]
